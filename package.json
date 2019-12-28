@@ -1,0 +1,22 @@
+{
+  "name": "bjerg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanthejam24/Bjerge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanthejam24/Bjerge/issues"
+  },
+  "homepage": "https://github.com/jordanthejam24/Bjerge#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
