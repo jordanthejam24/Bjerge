@@ -11,4 +11,176 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: black; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+.heading__title {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  backface-visibility: hidden;
+  text-align: center; }
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  backface-visibility: hidden;
+  text-align: center; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 3rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+    text-transform: none; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 12rem !important; }
+
+.section-about {
+  background-color: black;
+  padding: 0;
+  margin-top: 1rem; }
+
+.section-homepage {
+  background-color: #bdbdbd;
+  padding: 0 0 30rem 0;
+  margin-top: -10rem; }
+
+.btn {
+  /* transition has to be on initial state */ }
+  .btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    backface-visibility: hidden;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: white;
+    color: grey; }
+    .btn--white::after {
+      background-color: white; }
+
+.about {
+  height: 95vw;
+  background-color: black;
+  clip-path: polygon(0% -20%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  z-index: 1; }
+
+.homepage {
+  height: 50vw;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../img/mountain-range2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); }
+  .homepage__img {
+    width: 100%; }
+  .homepage__description {
+    width: 58rem;
+    position: absolute;
+    top: 30%;
+    left: 18%; }
+
+.header {
+  background-color: black;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 6rem;
+  overflow: hidden; }
+  .header__title {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    margin-top: 7px;
+    font-size: 3rem; }
+
+.nav {
+  width: 50rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 55%; }
+  .nav__main-menu-link {
+    color: white;
+    float: left;
+    margin-top: 2rem;
+    margin-left: 18px;
+    text-decoration: none;
+    list-style-type: none; }
+
+.menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
