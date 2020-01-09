@@ -5,7 +5,14 @@
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
     }
+.row-margin-small {
+    max-width: calc($grid-width - 20px);
+    margin: 0 auto;
 
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+}
     @include clearfix;
 // ^ symbol here means starts with
     [class^="col-"]{

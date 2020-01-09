@@ -13,6 +13,10 @@
         margin-top:7px;
         font-size: 3rem;
     }
+    &__a {
+        text-decoration: none;
+        color: $color-white;
+    }
 }
 .nav {
     width: 50rem;
