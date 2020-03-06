@@ -11,110 +11,48 @@
         <title>Bjerge | Simplistic Beauty in Majestic Forms</title>
     </head>
     <body>
-        <header class="header">
-            <div class="header__logo-box">
-                <h1 class="heading__title header__title">
-                    <a href="#" class="header__a">Bjerge</a>
-                </h1>
-                <!-- <img src="img/mountain-logo-1.jpg" alt="mountain logo" class="header__logo"> -->
+        <div class="container">
+            <nav class="nav-bar">
+                <img src="img/mountain-logo-2.png" alt="mountaint logo" class="nav-bar__logo">
+                <h3>hamburger thingy</h3>
+            </nav>
+            <header class="header">
+                <h1 class="header__title">Bjerge</h1>
+                <p class="header__paragraph">
+                    It's really just Mountain in Danish.
+                </p>
+                <!--Thinking of adding bouncing arrow at the bottom to keep it from being too boring-->
+            </header>
+            <!--finish hamburger tomorrow-->
+            <div class="content">
+                <div class="parallax">
+                <div class="quotes">
+                    <!--add quote symbol-->
+                    <div class="quotes__box">
+                            <p class="quotes__paragraph">
+                                some random thing about how cool mountains are and some more cool things about mountains and more to make it a run on sentence.
+                            </p>
+                            <span class="quotes__name">Gerald Mayberry</span>
+                        </div>
+                        <div class="quotes__box">
+                            <p class="quotes__paragraph">
+                                Mountains first originated on Earth some time ago and even to this day they continue to exist. And Mountains first originated on Earth some time ago and even to this day they continue to exist Surprise!
+                            </p>
+                            <span class="quotes__name">Rosetta Juarez</span>
+                        </div>
+                    </div>
+                </div>
+                    <div class="spots">
+                        <h1 class="spots__title">Famous Spots</h1>
+                        <div class="spots__place">
+                            img of place
+                            <h3 class="spots__place-name">Mountain name</h3>
+                            <p class="spots__desc">something cool describing the place</p>
+                            <a href="#" class="btn btn-api">Find Me!</a>
+                        </div>
+                    </div>
+                
             </div>
-            <div class="nav">
-                <ul class="nav__main-menu">
-                    <li class="nav__main-menu-link"><a href="#" class="menu-link">Home</a></li>
-                    <li class="nav__main-menu-link"><a href="#" class="menu-link">About</a></li>
-                    <li class="nav__main-menu-link"><a href="#" class="menu-link">Portfolio</a></li>
-                    <li class="nav__main-menu-link"><a href="#" class="menu-link">Discover</a></li>
-                    <li class="nav__main-menu-link"><a href="#" class="menu-link">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <main>
-            <section class="homepage">
-                <div class="homepage__img">
-                    <!-- <img src="img/mountain-range.jpg" alt="mountain" class="homepage__img--background"> -->
-                </div>
-                <div class="homepage__description">
-                    <h1 class="heading-primary">
-                        <span class="heading-primary--main">Mountains</span>
-                        <span class="heading-primary--sub">Elegant, yet powerful creations that stand the test of time. Each mountain more interesting than the last.</span>
-                    </h1>
-                </div>
-            </section>
-            <section class="about">
-                <div class="about__section">
-                    <div class="about__title">
-                        <h1 class="about__title--header">
-                            What Defines a Mountain
-                        </h1>
-                        <div class="about__title--underliner"></div>
-                    </div>
-                    <div class="about__description">
-                        <!-- <p class="about__paragraph">Obviously there are differences between hills and mountains. Mountains are massive rocky structures errupting from the earth. But is there a scientific difference? 1000 feet is the highest a hill has to be to become an official mountain. Mount [insert it] in Vermont stands as the world's smallest mountain at 1018ft.</p> -->
-                        <ul class="about__list">
-                            <li class="about__list--item">Width and Height</li>
-                            <li class="about__list--item">Terrain</li>
-                            <li class="about__list--item">Region</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about__history">
-                    <div class="row">
-                        <div class="col-1-of-3">
-                            <div class="about__history--section-img">
-                                <img src="/img/mountain-with-person.jpg" alt="mountain with traveler" class="about__history--img">
-                            </div>
-                        </div>
-                        <div class="col-2-of-3">
-                            <div class="about__history--section-p">
-                                <p class="about__paragraph">What sparks an interest in climbing mountains. Who decides to embark up a steep cliff, challenge their own adventurous spirit, in the face of death or injury for fun. Mountains offer accomplishment and outstanding adventure. No two climbs are equal.</p>
-                                <p class="about__paragraph">Want to learn more? <a href="#" class="about__a">Click here</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2-of-3">
-                            <div class="about__history--section-p2">
-                                <p class="about__paragraph">What sparks an interest in climbing mountains. Who decides to embark up a steep cliff, challenge their own adventurous spirit, in the face of death or injury for fun. Mountains offer accomplishment and outstanding adventure. No two climbs are equal.</p>
-                            </div>
-                        </div>
-                        <div class="col-1-of-3">
-                            <div class="about__history--section-img">
-                                <img src="img/mountain-with-person-2.jpg" alt="mountain with mountain-with-person" class="about__history--img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1-of-3">
-                            <div class="about__history--section-img">
-                                <img src="img/nat-3-large.jpg" alt="mountain with mountain-with-person" class="about__history--img">
-                            </div>
-                        </div>
-                        <div class="col-2-of-3">
-                            <div class="about__history--section-p">
-                                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum voluptatum excepturi facere neque! Nemo deleniti odit, doloribus neque in molestiae maiores nulla corrupti voluptatibus earum debitis fugit reiciendis, ipsum eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aut blanditiis rem. Repudiandae reiciendis amet atque neque eius </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="featured">
-                <div class="featured__title">
-                    Some great ones
-                </div>
-                <div class="featured__gallery">
-                    <div class="row">
-                        <div class="col-1-of-2">
-                            picture
-                        </div>
-                        <div class="col-1-of-2">
-                            picture 2
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-
-        </footer>
+        </div>
     </body>
 </html> 

@@ -1,0 +1,57 @@
+.container {
+    height: 95vh;
+    background-color: var(--color-white-1);
+}
+.nav-bar {
+    height: 12rem;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    &__logo {
+        width: 5.5rem;
+        height: 5.5rem;
+        margin: 2rem;
+        color: black;
+    }
+}
+
+.header {
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 95vh;
+    color: white;
+    //change when finished test only
+    background-color: var(--color-primary-light);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        font-size: 12rem;
+        font-weight: 200;
+    }
+    &__paragraph {
+        // text-transform: uppercase;
+        // letter-spacing: .2rem;
+    }
+
+}
+
+.content {
+    //guestimate for now
+    height: 140vh;
+    background-color: var(--color-white-2);
+}
+
+
+
+
+
+
