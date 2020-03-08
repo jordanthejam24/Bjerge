@@ -13,7 +13,10 @@
     <body>
         <div class="container">
             <nav class="nav-bar">
-                <img src="img/mountain-logo-2.png" alt="mountaint logo" class="nav-bar__logo">
+                <!-- <img src="img/mountain-logo-2.png" alt="mountaint logo" class="nav-bar__logo"> -->
+                <svg class="nav-bar__logo">
+                    <use href="/img/sprite.svg#icon-mountain"></use>
+                </svg>
                 <button class="nav-bar__btn">
                     <span class="nav-bar__btn-line"></span>
                     <span class="nav-bar__btn-line"></span>
@@ -21,15 +24,29 @@
                 </button>
             </nav>
             <header class="header">
+                <!-- adding objects for a cool (hopefully) parallax feel -->
                 <h1 class="header__title">Bjerge</h1>
                 <p class="header__paragraph">
                     It's really just Mountain in Danish.
                 </p>
+                <!--should find a better way to refactor all this or condense it-->
+                <svg class="header__img-1 rellax" data-rellax-speed="9">
+                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
+                </svg>
+                <svg class="header__img-2 rellax" data-rellax-speed="2">
+                    <use href="/img/sprite.svg#icon-circle"></use>
+                </svg>
+
                 <!--Thinking of adding bouncing arrow at the bottom to keep it from being too boring-->
             </header>
             <!--finish hamburger tomorrow-->
             <div class="content">
-                <div class="parallax"></div>
+                <div class="message">
+                    <h1 class="message__title">
+                        The journey is in opportunity
+                    </h1>
+                </div>
+                <div class="parallax__mountain"></div>
                 <div class="quotes">
                     <!--add quote symbol-->
                     <div class="quotes__box">
@@ -57,6 +74,16 @@
                     </div>
                 
             </div>
+            <footer class="footer">
+                footer
+            </footer>
         </div>
+        <script src="./js/rellax.min.js"></script>
+        <script>
+        //passing the relax method a string that will look for classes of rellax
+        var rellax = new Rellax('.rellax', {
+            center: true
+        });
+        </script>
     </body>
 </html> 

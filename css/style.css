@@ -47,10 +47,25 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
   .header__title {
     font-size: 12rem;
     font-weight: 200; }
+  .header__img-1 {
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+    position: absolute;
+    top: 70%;
+    left: 10%; }
+  .header__img-2 {
+    height: 4rem;
+    width: 4rem;
+    fill: white;
+    position: absolute;
+    top: 50%;
+    right: 20%; }
 
 .content {
   height: 140vh;
@@ -68,14 +83,14 @@ body {
   justify-content: space-between;
   align-items: center; }
   .nav-bar__logo {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 7rem;
+    height: 7rem;
     margin: 2rem;
-    color: black; }
+    fill: white; }
   .nav-bar__btn {
     width: 6rem;
     height: 6rem;
-    border: 3px solid black;
+    border: 3px solid white;
     background-color: transparent;
     text-align: center;
     margin: 2rem;
@@ -90,23 +105,36 @@ body {
       height: .3rem;
       width: 4rem;
       display: block;
-      background-color: black; }
+      background-color: white; }
       .nav-bar__btn-line:not(:last-child) {
         margin-bottom: 1rem; }
     .nav-bar__btn:hover {
       transform: scale(1); }
 
-.parallax {
+.parallax__mountain {
   background-image: url("../img/mountain-range2.jpg");
-  height: 70%;
+  height: 40%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1; }
 
+.message {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start; }
+  .message__title {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding: 4rem auto; }
+
 .quotes {
-  height: 13rem;
+  height: 16rem;
   padding: 7rem 0;
   background-color: var(--color-white-1);
   display: flex;
