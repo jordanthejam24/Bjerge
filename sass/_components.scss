@@ -1,4 +1,5 @@
 
+//when doing responsive change journey part for nav bar
 .nav-bar {
     height: 12rem;
     width: 100%;
@@ -16,7 +17,7 @@
         height: 7rem;
         margin: 2rem;
         fill: white;
-        
+        cursor: pointer;
     }
 
     // &__logo::before {
@@ -65,7 +66,8 @@
     }
 }
 
-
+//////////////////////////////////////////////////////////////////
+//parallax section probably won't use
 .parallax {
     
     // &__header {
@@ -79,18 +81,19 @@
     //     z-index: 1;
     // }
 
-    &__mountain {
-        background-image: url('../img/mountain-range2.jpg') ;
-        height: 40%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        z-index: 1;
-    }
+    // &__mountain {
+    //     background-image: url('../img/mountain-range2.jpg') ;
+    //     padding: 5rem 0;
+    //     height: 60%;
+    //     background-position: top;
+    //     background-attachment: fixed;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     z-index: 0;
+    // }
 }
-
+/////////////////////////////////////////////////////////////////////
+//message section
 .message {
     background-color: black;
     color: white;
@@ -106,59 +109,190 @@
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 1rem;
-        padding: 4rem auto;
+        padding: 4rem 0;
+        z-index: 3;
     }
 }
 
-.quotes {
+//////////////////////////////////////////////////////////////////////
+//articles section
+.articles {
     // margin-top: 10rem;
-    height: 16rem;
+    height: 95vh;
     padding: 7rem 0;
     background-color: var(--color-white-1);
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 1fr 1fr;
     
-    justify-content: space-between;
-    position: absolute;
-    top: 15rem;
-    left: 0;
+    // display: flex;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+
+    //decided to go with flexbox and grid because I think it will work better for aligning the items the way I want
+    &__title {
+        font-size: 3rem;
+        font-family: inherit;
+        font-weight: 700;
+        color: var(--color-primary-light);
+        grid-area: 1 / 1 / 2 / 3;
+        justify-self: center;
+    }
     
     &__box{
-        padding: 0 13rem;
+        // padding: 0 4rem;
+        margin: 0 10rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding: 5rem 0;
         
-        &:last-child {
-            flex: 0 0 50%;
-        }
+        // &:last-child {
+        //     flex: 0 0 50%;
+        // }
     }
     
     &__paragraph {
+        width: 100%;
+        color: black;
         margin-bottom: 1rem;
         line-height: 1.75rem;
+        padding-bottom: 2rem;
     }
-    &__name {
-        margin: 0 auto;
+    &__btn {
+        
+    }
+}
+
+//articles button, creating a button that's black on white pages and on hover white with black background
+.btn-articles {
+    &,
+    &:link,
+    &:visited {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5rem;
+        padding: .5rem 1.5rem;
+        color: black;
+        border:  2px solid black;
+        // border-radius: 100px;
+        cursor: pointer;
+        
+        position: relative;
     }
 
+    //make background color fly up to the top of button and change color to white
+    //for some reason it doesn't want to work with me
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: var(--shadow-dark);
+        color: white;
+        background-color: black;
+        transform-origin: bottom;
+        transform: scaleY(0);
+        transition: 0.4s background-color ease-in, 0.1s color;
+    }
+    &:hover::before {
+        // color: white;
+        transform: scaleY(1);
+    }
 }
 
 
+// .btn-articles:hover::after {
+//     color: white;
+// }
+
+// &:active,
+// &:focus{
+//     transform: scaleY(1);
+//     box-shadow: var(--shadow-dark);
+// }
+
+
+
+
+////////////////////////////////////////////////////////////////////
+//spots section
 .spots {
-    height: 50vh;
+    height: 100vh;
+    padding: 4rem;
     background-color: var(--color-primary-dark);
     color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
 
     &__title {
-
+        padding-bottom: 3rem;
+        font-size: 4rem;
+        font-weight: 400;
+        align-self: center;
+    }
+    &__img {
+        width:  15rem;
+        height: 15rem;
+        background-size: cover;
+        border-radius: 3px;
     }
     &__place {
+        padding: 3rem;
+        display: flex;
+        justify-content: space-around;
 
         &-name {
-
+            font-size: 1.8rem;
+            font-family: inherit;
         }
     }
+    // &__place:nth-child(3) {
+    //     flex-direction: column-reverse;
+    //     justify-content: space-around;
+    //     flex-wrap: nowrap;
+    // }
+
+    &__info {
+        // margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        flex: 0 0 40%;
+    }
+
     &__desc {
 
     }
 }
+
+.btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+}
+.btn-api {
+    display: inline-block;
+}
+
+
+////////////////////////////////////////////////////
+//section climbers
+//think about using grid and having some parallax effect on the side (2 columns)
+.climbers {
+    height: 95vh;
+    padding: 5rem;
+    display: flex;
+}
+
+
+

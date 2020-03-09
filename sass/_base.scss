@@ -27,6 +27,33 @@ $bp-medium: 56.25em; //900px breakpoint variable
 $bp-small: 37.5em; //600px breakpoint variable
 $bp-smallest: 31.25em; //500px bp v
 
+//trying to create a mixin that will minimize the code for icons with parallax in layout.scss
+@mixin icon-size-small {
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    position: absolute;
+    fill: white;
+    @content;
+}
+@mixin icon-size-medium {
+    height: 5rem;
+    width: 5rem;
+    display: inline-block;
+    position: absolute;
+    fill: white;
+    @content;
+}
+@mixin icon-size-large {
+    height: 8rem;
+    width: 8rem;
+    display: inline-block;
+    position: absolute;
+    fill: white;
+    @content;
+}
+
+
 * {
     margin: 0;
     padding: 0;
