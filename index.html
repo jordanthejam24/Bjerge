@@ -49,6 +49,7 @@
                         <h1 class="about__title heading-primary--sub">What are we about?</h1>
                         <p class="about__p">Sit amet consectetur adipisicing elit. Eius dolore autem cumque quia assumenda ab ut similique rerum repellat, pariatur unde nisi quibusdam, atque laudantium consequatur necessitatibus. Inventore, mollitia veritatis?</p>
                         <p class="about__p">Consectetur adipisicing elit. Eius dolore autem cumque quia assumenda ab ut similique rerum repellat, pariatur unde nisi quibusdam, atque laudantium consequatur necessitatibus. Lorem ipsum dolor sit amet Inventore, mollitia veritatis?</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </section>
@@ -62,22 +63,94 @@
                                 <img src="img/mountain-with-person-2.jpg" alt="mountain range 1" class="hikes__box--img">
                                 <h3 class="hikes__box--name">Mount Denali</h3>
                                 <p>Standing at a whopping 20,310ft, Denali is the highest mountain peak in the United States. Located in Alaska, it's not the most popular mountain for hikinh. However it sure looks good in photos.</p>
+                                <a href="#" class="btn btn-primary">maps feature soon</a>
                             </div>
                             <div class="hikes__box--individual">
                                 <img src="img/mountain-range.jpg" alt="mountain range 1" class="hikes__box--img">
                                 <h3 class="hikes__box--name">Mont Blanc</h3>
                                 <p>Nicknamed the White Mountain in French, stands at 15,774ft and is quite the spectacle. Similique cumque eum ipsum, animi officiis. Nihil eos soluta modi magnam optio?</p>
+                                <a href="#" class="btn btn-primary">maps feature soon</a>
                             </div>
                             <div class="hikes__box--individual">
                                 <img src="img/mountain-with-person.jpg" alt="mountain range 1" class="hikes__box--img">
                                 <h3 class="hikes__box--name">The Matterhorn</h3>
                                 <p>The Matterhorn stands at 14,692ft and can be found in Duran. Adipisicing elit. Sit distinctio et eos! Quo, facere adipisci. Accusantium ad sequi quasi numquam praesentium sed.</p>
+                                <a href="#" class="btn btn-primary">maps feature soon</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="section-bg-video">
+                <div class="bg-video">
+                    <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                        Your Browser does not support this video.
+                    </video>
+                    <!--Video by Tobias Bjørkli from Pexels-->
+                </div>
+                <div class="quote">
+                    <h1 class="heading-primary--main quote__heading">If I have the gift of prophecy and can fathom all mysteries and all knowledge, and if I have a faith that can move mountains, but do not have love, I am nothing. </h1>
+                    <span>- 1 Corinthians 13:2</span>
+                </div>
+            </section>
+            <section class="section-contact">
+                <div class="contact">
+                    <div class="contact__left"></div>
+                    <div class="contact__form">
+                        <form action="#" class="form">
+                            <h2 class="heading-primary--sub form__heading">
+                                Contact Us
+                            </h2>
+                            <div class="form__group">
+                                <input type="text" id="name" class="form__input" placeholder="Full Name" required>
+                                <!-- <label for="name" class="form__label">Full Name</label> -->
+                            </div>
+                            <div class="form__group">
+                                <input type="email" id="email" class="form__input" placeholder="email address" required>
+                                <!-- <label for="email" class="form__label">Email Address</label> -->
+                            </div>
+                            <button class="btn btn-secondary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="footer__box">
+                <div class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Discover</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer__logo-box">
+                    <svg class="footer__logo">
+                        <use href="/img/sprite.svg#icon-mountain"></use>
+                    </svg>
+                </div>
+                <div class="footer__social">
+                    <svg class="footer__social-icon icon-facebook">
+                        <use href="/img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                    <svg class="footer__social-icon icon-twitter">
+                        <use href="/img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                    <svg class="footer__social-icon icon-youtube">
+                        <use href="/img/sprite.svg#icon-youtube"></use>
+                    </svg>
+                    <svg class="footer__social-icon icon-github">
+                        <use href="/img/sprite.svg#icon-github"></use>
+                    </svg>
+                </div>
+            </div>
+            <p class="footer__copyright">
+                Copyright &copy; 2020 Jordan McKenzie
+            </p>
+        </footer>
         <script src="js/script.js"></script>
     </body>
 </html> 
