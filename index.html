@@ -11,206 +11,71 @@
         <title>Bjerge | Simplistic Beauty in Majestic Forms</title>
     </head>
     <body>
-        <div class="container">
-            <nav class="nav-bar">
-                <!-- <img src="img/mountain-logo-2.png" alt="mountaint logo" class="nav-bar__logo"> -->
-                <!--Make sure to use jQuery/js to turn the colors to dark when on light backgrounds-->
-                <svg class="nav-bar__logo">
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>&rArr;</span>About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>&rArr;</span>Popular Hikes</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>&rArr;</span>Support</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>&rArr;</span>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="header__shader">
+                <div class="header__title-box">
+                    <h1 class="heading-primary--main">Bjerge</h1>
+                    <span class="header__span">It's really just mountain in Danish</span>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section-about">
+                <svg class="about__graphic">
                     <use href="/img/sprite.svg#icon-mountain"></use>
                 </svg>
-                <button class="nav-bar__btn">
-                    <span class="nav-bar__btn-line"></span>
-                    <span class="nav-bar__btn-line"></span>
-                    <span class="nav-bar__btn-line"></span>
-                </button>
-            </nav>
-            <header class="header">
-                <!-- adding objects for a cool (hopefully) parallax feel -->
-                <h1 class="header__title">Bjerge</h1>
-                <p class="header__paragraph">
-                    It's really just Mountain in Danish.
-                </p>
-                <!--should find a better way to refactor all this or condense it-->
-                <svg class="header__img-1 rellax" data-rellax-speed="10">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-                <svg class="header__img-2 rellax" data-rellax-speed="2">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-                <svg class="header__img-3 rellax" data-rellax-speed="3">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-                <svg class="header__img-4 rellax" data-rellax-speed="1">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-                <svg class="header__img-5 rellax" data-rellax-speed="6">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-                <svg class="header__img-6 rellax" data-rellax-speed="0">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-                <svg class="header__img-7 rellax" data-rellax-speed="5">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-                <svg class="header__img-8 rellax" data-rellax-speed="8">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-                <svg class="header__img-9 rellax" data-rellax-speed="2">
-                    <use href="/img/sprite.svg#icon-triangle-sharp"></use>
-                </svg>
-
-                <!--Thinking of adding bouncing arrow at the bottom to keep it from being too boring-->
-            </header>
-            <!--finish hamburger tomorrow-->
-            <section class="section-content">
-                <div class="message">
-                    <h1 class="message__title">
-                        The journey is in the opportunity
-                    </h1>
-                </div>
-                <!-- <div class="parallax__mountain rellax" data-rellax-speed="2"></div> -->
-                <div class="articles">
-                    <h1 class="articles__title">
-                        Featured Articles
-                    </h1>
-                    <!--add quote symbol-->
-                    <div class="articles__box">
-                        <p class="articles__paragraph">
-                            This could be an article snippit for some random thing about how cool mountains are and some more cool things about mountains and more to make it a run on sentence. Maybe after you read this, you're hyped up for your next adventure and want to read more.
-                        </p>
-                        <a href="#" class="btn-articles">
-                            READ MORE
-                        </a>
-                    </div>
-                    <div class="articles__box">
-                        <p class="articles__paragraph">
-                            Mountains first originated on Earth some time ago and even to this day they continue to exist. And Mountains first originated on Earth some time ago and even to this day they continue to exist Surprise!
-                        </p>
-                        <a href="#" class="btn-articles">
-                            READ MORE
-                        </a>
-                    </div>
-                    <div class="articles__box">
-                        <p class="articles__paragraph">
-                            I just love the way that this site showcases many amazing hikes and mountains. Mountains are just the coolest places on earth. How did they become so amazing. Is it possible that an intelligent creator designed this world to be as such?
-                        </p>
-                        <a href="#" class="btn-articles">
-                            READ MORE
-                        </a>
-                    </div>
-                    <div class="articles__box">
-                        <p class="articles__paragraph">
-                            If only there were some really good articles to be put here on mountains that I could actually find. Then I could link the page to them and allow people to actually find some interesting articles on hikes or mountains.
-                        </p>
-                        <a href="#" class="btn-articles">
-                            READ MORE
-                        </a>
+                <!--<a href="https://www.freepik.com/free-photos-vectors/travel">Travel vector created by freepik - www.freepik.com</a>-->
+                <div class="about">
+                    <div class="about__box">
+                        <h1 class="about__title heading-primary--sub">What are we about?</h1>
+                        <p class="about__p">Sit amet consectetur adipisicing elit. Eius dolore autem cumque quia assumenda ab ut similique rerum repellat, pariatur unde nisi quibusdam, atque laudantium consequatur necessitatibus. Inventore, mollitia veritatis?</p>
+                        <p class="about__p">Consectetur adipisicing elit. Eius dolore autem cumque quia assumenda ab ut similique rerum repellat, pariatur unde nisi quibusdam, atque laudantium consequatur necessitatibus. Lorem ipsum dolor sit amet Inventore, mollitia veritatis?</p>
                     </div>
                 </div>
-                
-                <div class="spots">
-                    <h1 class="spots__title">Famous Spots</h1>
-                    <div class="spots__place">
-                        <img src="img/mountain-with-person-2.jpg" alt="mountain 1" class="spots__img">
-                        <div class="spots__info">
-                            <h3 class="spots__place-name">Mt. Raineer <span>16,814 ft</span></h3>
-                            <p class="spots__desc">Reigning high from Washington State, U.S. this mighty mountain serves not only as a landmark but a fantastic place for hikes and climbs. I'm actually not sure what ese to put in this section, I want to make it better, but I don't want to add too much.</p>
-                            <!-- <a href="#" class="btn btn-api">Find Me!</a> -->
-                        </div>
-                    </div>
-                    <div class="spots__place">
-                        <div class="spots__info">
-                            <h3 class="spots__place-name">Mt. Everest <span>32,379 ft</span></h3>
-                            <p class="spots__desc">Reigning high from somewhere in the Himalayas, this mighty mountain serves not only as a landmark but a fantastic place for hikes and climbs. I'm actually not sure what ese to put in this section, I want to make it better, but I don't want to add too much.</p>
-                            <!-- <a href="#" class="btn btn-api">Find Me!</a> -->
-                        </div>
-                        <img src="img/mountain-with-person.jpg" alt="mountain 1" class="spots__img">
-                    </div>
-                    <div class="spots__place">
-                        <img src="img/nat-3-large.jpg" alt="mountain 1" class="spots__img">
-                        <div class="spots__info">
-                            <h3 class="spots__place-name">Mt. Machu Pichu <span>12,711 ft</span></h3>
-                            <p class="spots__desc">Reigning high from Lima, Peru this mighty mountain serves not only as a landmark but a fantastic place for hikes and climbs. I'm actually not sure what ese to put in this section, I want to make it better, but I don't want to add too much.</p>
-                            <!-- <a href="#" class="btn btn-api">Find Me!</a> -->
+            </section>
+            <section class="section-hikes">
+                <div class="hikes">
+                    <div class="hikes-container">
+                        <h1 class="heading-primary--main">Popular Mountains</h1>
+                        <div class="hikes-box">
+                            <div class="hikes-box--individual">
+                                <p>img</p>
+                                <p>name</p>
+                                <p>desc</p>
+                            </div>
+                            <div class="hikes-box--individual">
+                                <p>img</p>
+                                <p>name</p>
+                                <p>desc</p>
+                            </div>
+                            <div class="hikes-box--individual">
+                                <p>img</p>
+                                <p>name</p>
+                                <p>desc</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <seciton class="section-climbers">
-                <div class="climbers">
-                    <h1 class="climbers__title">
-                        Famous Climbers
-                    </h1>
-                    <div class="climbers__box">
-                        <div class="climbers__example">
-                            <img src="img/user-1.jpg" alt="user 1" class="climbers__img">
-                            <div class="climbers__example--name">
-                                <p>Timothy Adventure</p>
-                            </div>
-                            <div class="climbers__example--bio">
-                                <p>Always trying to find the next sweet spots with his friends, Timothy is out exploring the world to show us that there is more to life.</p>
-                            </div>
-                            <div class="climbers__links">
-                                <svg class="climbers__links--icon icon-facebook">
-                                    <use href="/img/sprite.svg#icon-facebook"></use>
-                                </svg>
-                                <svg class="climbers__links--icon icon-twitter">
-                                    <use href="/img/sprite.svg#icon-twitter"></use>
-                                </svg>
-                                <svg class="climbers__links--icon icon-youtube">
-                                    <use href="/img/sprite.svg#icon-youtube"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="climbers__example">
-                            <img src="img/user-2.jpg" alt="user 2" class="climbers__img">
-                            <div class="climbers__example--name">
-                                <p>Sally Discovery</p>
-                            </div>
-                            <div class="climbers__example--bio">
-                                <p>As a well known treasure hunter, Sally will do whatever it takes to discover the lost. Whether under the ocean, in a cave, or researching at the library, there is no end to her dedication.</p>
-                            </div>
-                            <div class="climbers__links">
-                                <svg class="climbers__links--icon icon-facebook">
-                                    <use href="/img/sprite.svg#icon-facebook"></use>
-                                </svg>
-                                <svg class="climbers__links--icon icon-twitter">
-                                    <use href="/img/sprite.svg#icon-twitter"></use>
-                                </svg>
-                                <svg class="climbers__links--icon icon-youtube">
-                                    <use href="/img/sprite.svg#icon-youtube"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </seciton>
-            <div class="quote">
-                <div class="quote__image-holder">
-                    <img src="img/quote-bg.jpg" alt="background image" class="quote__img rellax" data-rellax-speed="2">
-                </div>
-                <div class="quote__box">
-                    <p class="quote__text">If I have the gift of prophecy and can fathom all mysteries and all knowledge, and if I have a faith that can move mountains, but do not have love, I am nothing. </p>
-                    <span>- 1 Corinthians 13:2</span>
-                </div>
-            </div>
-            <footer class="footer">
-                <!--put logo here-->
-                logo
-                <div class="footer__content">
-                    <h1 class="footer__links">Links</h1>
-                    <h1 class="footer__copywrite">copywrite</h1>
-                    <h1 class="footer__social">Social Medias</h1>
-                </div>
-            </footer>
-        </div>
-        <script src="./js/rellax.min.js"></script>
-        <script>
-        //passing the relax method a string that will look for classes of rellax
-        var rellax = new Rellax('.rellax', {
-            center: true
-        });
-        </script>
+        </main>
+        <script src="js/script.js"></script>
     </body>
 </html> 

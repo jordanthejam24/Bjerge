@@ -1,138 +1,29 @@
-
-//when doing responsive change journey part for nav bar
-.nav-bar {
-    height: 12rem;
-    width: 100%;
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__logo {
-        width: 7rem;
-        height: 7rem;
-        margin: 2rem;
-        fill: white;
-        cursor: pointer;
-    }
-    &__btn {
-        width: 6rem;
-        height: 6rem;
-        border: 3px solid white;
-        background-color: transparent;
-        text-align: center;
-        margin: 2rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content:  center;
-        transition: all .5s;
-        //centering span hamburger lines inside of button
-
-        &-line {
-            height: .3rem;
-            width: 4rem;
-            // margin-left: 
-            display: block;
-            background-color: white;
-            // transition: all .3s cubic-bezier(.215,.61,.355,1);
-
-            &:not(:last-child) {
-                margin-bottom: 1rem;
-            }
-        }
-
-        &:hover {
-            transform: scale(1);
-            
-        }
-    }
-}
-
-/////////////////////////////////////////////////////////////////////
-//message section
-.message {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    
-    &__title {
-        font-size: 3rem;
-        font-weight: 400;
+.btn{
+    &,
+    &:link, 
+    &:visited {
         text-transform: uppercase;
-        letter-spacing: 1rem;
-        padding: 4rem 0;
-        z-index: 3;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        transition: all .2s;
+        position: relative;
+        backface-visibility: hidden;
+        font-size: 1.6rem;
+        background-color: transparent;
+
+        //change for the <button> element
+        border: none;
+        cursor: pointer;
     }
 }
 
-//////////////////////////////////////////////////////////////////////
-//articles section
-.articles {
-    // margin-top: 10rem;
-    height: 95vh;
-    padding: 7rem 0;
-    background-color: var(--color-white-1);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .2fr 1fr 1fr;
-    
-    // display: flex;
-    // align-items: center;
-    // flex-wrap: wrap;
-    // justify-content: space-evenly;
-
-    //decided to go with flexbox and grid because I think it will work better for aligning the items the way I want
-    &__title {
-        font-size: 4rem;
-        font-family: inherit;
-        font-weight: 700;
-        color: var(--color-primary-light);
-        grid-area: 1 / 1 / 2 / 3;
-        justify-self: center;
-        cursor: default;
-    }
-    
-    &__box{
-        // padding: 0 4rem;
-        margin: 0 10rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        padding: 5rem 0;
-        
-        // &:last-child {
-        //     flex: 0 0 50%;
-        // }
-    }
-    
-    &__paragraph {
-        width: 100%;
-        font-size: 1.4rem;
-        color: black;
-        margin-bottom: 1rem;
-        line-height: 1.8rem;
-        padding-bottom: 2rem;
-    }
-    
-}
-
-//articles button, creating a button that's black on white pages and on hover white with black background
-.btn-articles {
+//button with cool effect
+.btn-primary {
     &,
     &:link,
     &:visited {
+        margin: 3rem 0;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -150,152 +41,83 @@
         background-position: 0 100%;
         color: #ffffff;
     }
-
 }
-
-///////////////////////other buttons/////////////////////////
-.btn {
-    text-decoration: none;
+.heading-primary {
     color: white;
-    border: 2px solid white;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    backface-visibility: hidden;
     text-align: center;
-    border-radius: 20px;
-    width: 4rem;
-}
-.btn-api {
-    display: inline-block;
-}
 
-
-
-////////////////////////////////////////////////////////////////////
-//spots section
-
-.spots {
-    height: 100vh;
-    padding: 4rem;
-    background-color: var(--color-primary-dark);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-
-    &__title {
-        padding-bottom: 3rem;
-        font-size: 4rem;
+    &--main {
+        display: block;
+        color: white;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 3.5rem;
+    }
+    &--sub {
+        display: block;
+        color: var(--color-secondary);
+        font-size: 6rem;
         font-weight: 400;
-        align-self: center;
-    }
-    &__img {
-        width: 35rem;
-        height: 20rem;
-        background-size: cover;
-        // border-radius: 3px;
-    }
-    &__place {
-        padding: .5rem 5rem;
-        display: flex;
-        justify-content: space-around;
-
-        &-name {
-            font-size: 1.8rem;
-            font-family: inherit;
-            padding-bottom: 2rem;
-        }
-    }
-    // &__place:nth-child(3) {
-    //     flex-direction: column-reverse;
-    //     justify-content: space-around;
-    //     flex-wrap: nowrap;
-    // }
-
-    &__info {
-        // margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        flex: 0 0 40%;
-    }
-
-    &__desc {
-        font-size: 1.3rem;
-    }
-    & span {
-        font-size: 1rem;
+        letter-spacing: 1.2rem;
+        line-height: 6rem;
     }
 }
+//////////////////////////////////////////////////////////////
 
-
-
-////////////////////////////////////////////////////
-//section climbers
-//think about using grid and having some parallax effect on the side (2 columns)
-.climbers {
-    height: 75vh;
-    padding: 5rem 5rem 0 5rem;
-    position: relative;
-    overflow: hidden;
-
-    &__title {
-        font-size: 4rem;
-        text-align: center;
-        padding-bottom: 5rem;
-    }
+.about {
+    background-color: rgba(white, 0.8);
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path:polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 
     &__box {
-        display: flex;
-        justify-content: space-around;
-        overflow: hidden;
-        z-index: 10;
-    }
-
-    &__example {
-        padding: 5rem;
-        flex: 0 0 30%;
+        width: 30rem;
+        margin: 5rem 60%;
         display: flex;
         flex-direction: column;
-        
-
-        &--name {
-            font-size: 1.6rem;
-            font-weight: 700;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
-
-        &--bio {
-            font-size: 1.3rem;
-        }
+        align-items: center;
+        justify-items: center;
+        z-index: 2;
     }
-    &__img {
-        width: 17.5rem;
-        height: 17.5rem;
-        align-self: center;
+    &__title {
+        margin-bottom: 3rem;
     }
+    &__p {
 
-    &__links {
-        align-self: center;
-        padding: 1.5rem;
-        &--icon {
-            color: black;
-            width: 3rem;
-            height: 3rem;
-            display: inline-block;
-            cursor: pointer;
-            z-index: 5;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
         }
     }
+}
 
+.about__graphic {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 1000;
+    fill: var(--color-secondary);
 }
-/////////////icons because why not///////////////////
-.icon-facebook:hover {
-    fill: #3b5998;
+/////////////////////////////////////////////////////
+.hikes {
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path:polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
 }
-.icon-twitter:hover {
-    fill: rgb(29, 161, 242);
-}
-.icon-youtube:hover {
-    fill: #cc0000;
-}
+
+
+
 
 
